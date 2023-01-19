@@ -1,0 +1,74 @@
+//**Operaciones**//
+
+$ancho: 600px;
+$blue: blue;
+$green: green;
+
+.box_uno{
+    background-color: $blue;
+    width:$ancho/2;
+    height: 40px;
+}
+
+.box_dos{
+    background-color: $green;
+    width:($ancho/2)+50px;
+}
+
+//**Condicionales**//
+
+$animal: gala; 
+
+p{
+    @if $animal == gala{
+        color:blue;
+        font-size: 20px;
+    } @else if $animal == perro{
+        color:blueviolet;
+        font-size: 25px;
+    } @else {
+        color:crimson;
+        font-size: 30px;
+    }
+}
+
+//**booleano: true, false**//
+
+$mostrar:true;
+
+.contenido_tres{
+    @if $mostrar{
+        border: 5px solid goldenrod;
+    }
+}
+
+//**Extend**//
+.redSocial{
+    border:5px solid red;
+    background-color: goldenrod;
+}
+
+.redsocial--social{
+    @extend .redSocial;
+    font-size: 20px;
+    text-align: center;
+    background-color: green;
+}
+
+//**Mixin**//
+
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height ;
+
+}
+
+.my_mixin{
+    @include sizes (500px, 40px);
+    background-color:burlywood;
+}
+.my_mixin_2{
+    @include sizes (700px,60px);
+    background-color: aqua;
+}
+

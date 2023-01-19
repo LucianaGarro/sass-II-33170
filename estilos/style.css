@@ -1,0 +1,42 @@
+.box_uno {
+  background-color: blue;
+  width: 300px;
+  height: 40px;
+}
+
+.box_dos {
+  background-color: green;
+  width: 350px;
+}
+
+p {
+  color: blue;
+  font-size: 20px;
+}
+
+.contenido_tres {
+  border: 5px solid goldenrod;
+}
+
+.redSocial, .redsocial--social {
+  border: 5px solid red;
+  background-color: goldenrod;
+}
+
+.redsocial--social {
+  font-size: 20px;
+  text-align: center;
+  background-color: green;
+}
+
+.my_mixin {
+  width: 500px;
+  height: 40px;
+  background-color: burlywood;
+}
+
+.my_mixin_2 {
+  width: 700px;
+  height: 60px;
+  background-color: aqua;
+}/*# sourceMappingURL=style.css.map */
